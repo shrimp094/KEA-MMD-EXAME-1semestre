@@ -1,0 +1,347 @@
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+#grelha {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat (12, 1fr);
+    grid-gap: 0;
+}
+h3 {
+    color: #b2b2b2;
+    font-family: 'verdana', sans-serif;
+    font-size: 1.3vw;
+    text-align: justify;
+    margin-bottom: 0.5vw;
+}
+
+h2 {
+    color: #b2b2b2;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+
+h1 {
+    color: #b2b2b2;
+    font-family: 'verdana', sans-serif;
+    font-size: 1.3vw;
+    text-align: justify;
+    margin-bottom: 0.5vw;
+}
+
+#center {
+
+    text-align: center;
+    margin-top: 15vw;
+}
+
+#center2 {
+    grid-column: 1/4;
+    margin-top: 4vw;
+    position: fixed;
+    margin-left: 7.7vw;
+}
+
+#centerk {
+    grid-column: 5/11;
+    margin-top: 2vw;
+    margin-right: 5vw;
+}
+
+#centerk2 {
+    grid-column: 5/11;
+    margin-top: 11vw;
+    margin-right: 5vw;
+}
+
+#faixa {
+    grid-column: 12/-1;
+    background-color: black;
+    width: 8vw;
+    height: 55vw;
+    position: fixed;
+    margin-left: 90vw;
+}
+
+#insti {
+    position: fixed;
+}
+
+#facei {
+    position: fixed;
+}
+
+
+.logc {
+    width: 12vw;
+    height: auto;
+}
+
+.pc {
+    width: 44.5vw;
+    height: auto;
+}
+
+.voidc {
+    width: 44.5vw;
+    height: auto;
+}
+
+.minionc {
+    width: 44.5vw;
+    height: auto;
+}
+
+.maryc {
+    width: 44.5vw;
+    height: auto;
+}
+
+.kinc {
+    width: 44.5vw;
+    height: auto;
+}
+
+.cityc {
+    width: 44.5vw;
+    height: auto;
+    text-align: center;
+}
+
+.cvc {
+    width: 90vw;
+    height: auto;
+    text-align: center;
+    margin-left: -25vw;
+    margin-top: 5vw;
+}
+
+.instc {
+    width: 3vw;
+    height: auto;
+    margin-top: 50vw;
+    margin-left: 2.2vw;
+}
+
+.facec {
+    width: 3vw;
+    height: auto;
+    margin-top: 46vw;
+    margin-left: 2.2vw;
+}
+
+.link {
+
+}
+
+.fac {
+    width: 44.6vw;
+    height: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    text-align: center;
+}
+
+/* barra de nav e afins */
+
+nav {
+    grid-column: 1/4;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 1vw;
+    padding: 0;
+    width: 12vw;
+    background-color: none;
+    height: 100%;
+    /* Full height */
+    position: fixed;
+    /* Make it stick, even on scroll */
+    overflow: auto;
+    /* Enable scrolling if the sidenav has too much content */
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+li a {
+    display: block;
+    width: 10vw;
+    padding: 0.3vw 1vw;
+}
+
+.active {
+    background-color: #b2b2b2;
+    color: white;
+}
+
+/*////// START mobile VERSION //////*/
+
+@media screen and (max-width: 40em) {
+
+#grelha {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 6fr);
+    grid-gap: 0;
+}
+
+
+    h1 {
+    color: #b2b2b2;
+    font-family: 'verdana', sans-serif;
+    font-size: 3vw;
+    text-align: justify;
+    margin-bottom: 0.5vw;
+    }
+
+#center2 {
+    grid-column: 2/3;
+    margin-top: 4vw;
+    position: fixed;
+    margin-left: 10vw;
+}
+
+#centerk {
+    grid-column: 2/6;
+    margin-top: 15vw;
+    margin-right: -0.5vw
+}
+
+#centerk2 {
+    grid-column: 1/-1;
+    margin-top: 13vw;
+    margin-left: 30vw;
+}
+
+#faixa {
+    display: none;
+}
+nav {
+    grid-column: 1/-1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 1vw;
+    padding: 0;
+    width: 12vw;
+    background-color: none;
+    height: 100%;
+    /* Full height */
+    position: fixed;
+    /* Make it stick, even on scroll */
+    overflow: auto;
+    /* Enable scrolling if the sidenav has too much content */
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    font-size: 2.3vw;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: white;
+}
+
+li a {
+    display: block;
+    width: 10vw;
+    padding: 0.3vw 1vw;
+}
+
+.active {
+    background-color: #b2b2b2;
+    color: white;
+}
+
+
+
+.pc {
+    width: 67vw;
+    height: auto;
+}
+
+.voidc {
+    width: 67vw;
+    height: auto;
+}
+
+.minionc {
+    width: 67vw;
+    height: auto;
+}
+
+.maryc {
+    width: 67vw;
+    height: auto;
+}
+
+.kinc {
+    width: 67vw;
+    height: auto;
+}
+
+.cityc {
+    width: 67vw;
+    height: auto;
+}
+
+.cvc {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    margin-left: -15vw;
+    margin-top: 1vw;
+}
+
+
+.fac {
+    width: 67vw;
+    height: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    text-align: center;
+
+
+
+
+
+
+}
+
+/* animações */
+
+.logoC {
+    animation: fade 20s linear forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 15;
+    }
+    50% {
+        opacity: 30;
+    }
+    100% {
+        opacity: 100;
+    }
+
+}
+

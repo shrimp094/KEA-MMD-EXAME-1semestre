@@ -1,0 +1,97 @@
+#box {
+    width: 1528px;
+    height: 580px;
+    background-image: url("../img/florest.png");
+    position: relative;
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+}
+
+.small {
+    animation: jump 1s infinite linear;
+}
+
+.big {
+    animation: move1 0.5s forwards linear;
+}
+
+
+.monster {
+
+    animation: kill 1s steps(8) forwards ;
+}
+#monster{
+    position: absolute;
+    margin-left: 500px;
+    width: 600px;
+    height: 530px;
+    background-image: url(../img/tribe.png);
+    bottom: 0px;
+    left: 300px;
+}
+
+button {
+    background-color: red;
+    border: 10px;
+    color: white;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    font-size: 50px;
+    position: center;
+
+}
+
+#big {
+    left: 850px;
+    bottom: 650px;
+}
+
+#sick {
+
+
+}
+
+
+#sm1 {
+    left: 200px;
+    bottom: 100px;
+}
+
+#sm2 {
+    left: 400px;
+    bottom: 50px;
+    animation: jump 1s 0.3s infinite linear;
+}
+
+#sm3 {
+    left: 600px;
+    animation: jump 1s 0.6s infinite linear;
+}
+
+@keyframes jump {
+    25% {
+        transform: translateX(-10px) translateY(-150px);
+    }
+    50% {
+        transform: translateY(-300px)
+    }
+    75% {
+        transform: translateX(10px) translateY(-150px);
+    }
+}
+
+@keyframes kill {
+    to {
+        background-position: -4800px;
+    }
+}
+
+@keyframes move1 {
+    to {
+        transform: translateY(650px)
+    }
+}
