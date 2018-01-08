@@ -1,0 +1,356 @@
+body {
+    position: relative;
+
+    font-family: 'BenchNine';
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+}
+#frontpageback{
+    background-color: #60bdae;
+}
+#aboutusback{
+    background-color: #f4898a;
+}
+
+
+header {
+
+    display: grid;
+    grid-template-columns: repeat(8, 5fr);
+    grid-row: 1/3;
+    width: 100vw;
+    height: 10vh;
+    margin: 0;
+}
+#kinapp_header{
+    background-color: #613e8d;
+}
+
+main {
+
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    height: 90vh;
+
+}
+#kinapp_main{
+    background-color: #613e8d;
+}
+h1 {
+    color: white;
+    text-align: center;
+
+    font-size: 2.5vw;
+}
+h2{
+    color: white;
+    font-size: 2vw;
+}
+h3{
+    color: white;
+    font-size: 1.8;
+}
+p{
+    font-size: 1.8vw;
+
+}
+
+
+nav {
+    display: inline;
+    margin-top: 5vh;
+    grid-column: 4/-1;
+    text-align: center;
+}
+
+nav ul {
+    display: inline;
+    height: 10vh;
+    margin-top: 5vh;
+}
+
+nav li {
+    display: inline;
+    margin: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 3vw;
+
+}
+
+#currentPage {
+
+    padding: 1vw;
+
+    background-color: #3e205a;
+    border-radius: 50%;
+}
+
+nav a:link {
+    color: white;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #3e205a;
+}
+
+
+
+/*#iphone_container {
+    grid-column: 6/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid white;
+    text-align: center;
+    width: 27.03125vw;
+    height: 20vh;
+    margin-top: 20vw;
+}
+
+#iphone {
+    grid-column: 1/-1;
+    box-sizing: border-box;
+    width: 70%;
+    height: auto;
+}*/
+
+#iphone{
+    position: absolute;
+    right: 20vw;
+    bottom: 0;
+    width: 20vw;
+    height: auto;
+
+}
+#shadow{
+    position: absolute;
+    bottom: 0;
+    right: 39vw;
+    width: 12vw;
+    height: auto;
+
+}
+.redblock{
+    position: absolute;
+    background-color: #bf3626;
+    width: 100vw;
+    height: 10vh;
+    bottom:0;
+    left:0;
+}
+#logo {
+    display: inline;
+    /*position: absolute;*/
+    margin-left: 3vw;
+    margin-top: 3vh;
+    width: 10vw;
+    height: auto;
+}
+
+#esp {
+
+    grid-column: 2/5;
+    text-align: center;
+
+    margin-top: 20vh;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+#appstore{
+    box-sizing: border-box;
+    width: 70%;
+    height: auto;
+    grid-column: 1/2;
+}
+#googleplay{
+    box-sizing: border-box;
+    width: 70%;
+    height: auto;
+
+}
+
+#navappintro{
+    position: fixed;
+
+    right: 0;
+
+}
+#appintro{
+    grid-column: 6/10;
+    text-align: center;
+    color: white;
+    margin-top: 23vh;
+}
+#load{
+    width: 10vw;
+}
+#appimg1{
+    position: absolute;
+    /*top: 100vh;*/
+    bottom:0;
+    left: 0;
+    width: 35vw;
+}
+.infobox{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 100vw;
+    height: 100vh;
+}
+.subbox{
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+}
+.black{
+    margin-top: 3vh;
+    color: black;
+}
+#textapp1{
+    font-size: 2.5vw;
+    margin-top: 25vh;
+}
+#boxred{
+    background-color: #bf3a26;
+}
+#boxlightred{
+    background-color: #f48169;
+}
+#pageredshadow{
+    position: absolute;
+    left: 0;
+    bottom: -100vh;
+}
+
+#boxblue{
+    background-color: #60beaf;
+}
+#boxlightblue{
+    background-color: #9fd4cf;
+}
+#pageblueshadow{
+    position: absolute;
+    right: 0;
+    top: 200vh;
+}
+#boxyellow{
+    background-color: #ebe83b;
+}
+#boxlightyellow{
+    background-color: #fbf195;
+}
+#pageyellowshadow{
+    position: absolute;
+    left: 0;
+    top: 300vh;
+}
+.apptext{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.mainicon{
+    display: inline;
+    margin-top: 20vh;
+    width: 20vw;
+    height: auto;
+}
+#ipadapp{
+    position: absolute;
+    left: 0;
+    bottom: -200vh;
+    width: 40vw;
+    height: auto;
+}
+#msgicon{
+    margin-top: 10vh;
+}
+#subicons{
+
+    width: 25vw;
+    height: auto;
+}
+#msgphone{
+    position: absolute;
+    width: 15vw;
+    bottom: -300vh;
+    right: 10vw;
+}
+#ipad2{
+    position: absolute;
+    right: 0;
+    bottom: 0vh;
+    width: 45vw;
+    height: auto;
+}
+#text1{
+    height: 90vh;
+    grid-column: 2/5;
+
+}
+#text1h2{
+    margin-top: 35vh;
+}
+#text2{
+    height: 100vh;
+    grid-column: 2/5;
+}
+#text2h2{
+    margin-top: 45vh;
+}
+#values{
+    position: absolute;
+    bottom:-90vh;
+    right:0;
+    width: 35vw;
+}
+.text3{
+
+   margin-top: 40vh;
+}
+#text3_1{
+
+    grid-column: 2/4;
+
+}
+#text3_2{
+
+    grid-column: 5/7;
+}
+#text3_3{
+
+
+    grid-column: 8/10;
+}
+#redblock2{
+
+
+    left: 0;
+    bottom: -100vh;
+}
+#redblock3{
+
+    left: 0;
+    bottom: -200vh;
+}
+
+
+
+
+
